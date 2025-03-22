@@ -2,8 +2,18 @@
 ## Task:  Build and Deploy a Machine Learning Model for Predicting House Prices
 This project predicted House price using a Linear Regression model. The trained model is deployed as a web API using FastAPI. The API allows users to send house features as input and receive a predicted price in response. The deployment was done using Render after pushing necessary files to GitHub.
 ## Building and Running the model
-1. The model is trained ans saved it as .joblib file
+1. The model is trained and saved it as .joblib file.
 2. The trained model (House_Price_prediction.joblib) is loaded in app.py to serve predictions.
+
+## Understanding app.py
+app.py is the core FastAPI script that loads the trained model and serves predictions via an API endpoint.
+### Key Components of app.py:<br>
+Import necessary libraries: FastAPI, Joblib, Pandas, and Pydantic.<br>
+Load the trained model: The House_Price_prediction.joblib is loaded using joblib.load().<br>
+Define the API structure:<br>
+Root (/) endpoint: Confirms the API is running.<br>
+/predict endpoint: Accepts JSON input and returns the predicted house price.<br>
+Run the FastAPI application using Uvicorn.
 
 ## Running FastAPI API locally
 1. Start the API Server
@@ -16,22 +26,22 @@ POST/predict
 This endpoint takes house features in JSON format and returns the predicted price.
 Example request:
  <p>{<br>
-    <p>"OverallQual": 7, <br>
-   <p> "YearBuilt": 2005, <br>
-    <p>"YearRemodAdd": 2010, <br>
-    <p>"TotalBsmtSF": 1200.5, <br>
-   <p> "FstFlrSF": 1500, <br>
-   <p> "GrLivArea": 2500, <br>
-   <p> "FullBath": 2, <br>
-    <p>"GarageCars": 2, <br>
-   <p> "GarageArea": 500, <br>
+    <p>"OverallQual": 6.0, <br>
+   <p> "YearBuilt": 1963.0, <br>
+    <p>"YearRemodAdd": 2003, <br>
+    <p>"TotalBsmtSF": 1059.0, <br>
+   <p> "FstFlrSF": 1068.0, <br>
+   <p> "GrLivArea": 1068.0, <br>
+   <p> "FullBath": 1, <br>
+    <p>"GarageCars": 1.0, <br>
+   <p> "GarageArea": 264.0, <br>
    <p> "ExterQualencoded": 3, <br>
-   <p> "BsmtQualencoded": 2, <br>
+   <p> "BsmtQualencoded": 4, <br>
    <p> "KitchenQualencoded": 3 <br>
   <p>} <br>
 Example Response<br>
  <p>{<br>
-    <p> "predicted_price": 250000.5 <br>
+    <p> "predicted_price": 145526.5 <br>
 } <br>
 
 ## Testing the API using Postman
@@ -69,19 +79,18 @@ POST/predict
    This endpoint takes house features in JSON format and returns the predicted price.
    Example request:
  <p>{<br>
-    <p>"OverallQual": 7, <br>
-   <p> "YearBuilt": 2005, <br>
-    <p>"YearRemodAdd": 2010, <br>
-    <p>"TotalBsmtSF": 1200.5, <br>
-   <p> "FstFlrSF": 1500, <br>
-   <p> "GrLivArea": 2500, <br>
-   <p> "FullBath": 2, <br>
-    <p>"GarageCars": 2, <br>
-   <p> "GarageArea": 500, <br>
+ <p>"OverallQual": 6.0, <br>
+   <p> "YearBuilt": 1963.0, <br>
+    <p>"YearRemodAdd": 2003, <br>
+    <p>"TotalBsmtSF": 1059.0, <br>
+   <p> "FstFlrSF": 1068.0, <br>
+   <p> "GrLivArea": 1068.0, <br>
+   <p> "FullBath": 1, <br>
+    <p>"GarageCars": 1.0, <br>
+   <p> "GarageArea": 264.0, <br>
    <p> "ExterQualencoded": 3, <br>
-   <p> "BsmtQualencoded": 2, <br>
+   <p> "BsmtQualencoded": 4, <br>
    <p> "KitchenQualencoded": 3 <br>
-  <p>} <br>
 Example Response<br>
  <p>{<br>
     <p> "predicted_price": 250000.5 <br>
