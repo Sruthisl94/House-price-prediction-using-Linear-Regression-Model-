@@ -86,6 +86,10 @@ Example Response<br>
  <p>{<br>
     <p> "predicted_price": 250000.5 <br>
 } <br>
+
+## Author
+Sruthi S L
+Email: sruthisl2012@gmail.com
    
    
      
