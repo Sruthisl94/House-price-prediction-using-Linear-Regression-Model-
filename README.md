@@ -16,23 +16,23 @@ POST/predict
 This endpoint takes house features in JSON format and returns the predicted price.
 Example request:
 {
-    "OverallQual": 7,
-    "YearBuilt": 2005,
-    "YearRemodAdd": 2010,
-    "TotalBsmtSF": 1200.5,
-    "FstFlrSF": 1500,
-    "GrLivArea": 2500,
-    "FullBath": 2,
-    "GarageCars": 2,
-    "GarageArea": 500,
-    "ExterQualencoded": 3,
-    "BsmtQualencoded": 2,
-    "KitchenQualencoded": 3
-}
+    <p>"OverallQual": 7, <br>
+   <p> "YearBuilt": 2005, <br>
+    <p>"YearRemodAdd": 2010, <br>
+    <p>"TotalBsmtSF": 1200.5, <br>
+   <p> "FstFlrSF": 1500, <br>
+   <p> "GrLivArea": 2500, <br>
+   <p> "FullBath": 2, <br>
+    <p>"GarageCars": 2, <br>
+   <p> "GarageArea": 500, <br>
+   <p> "ExterQualencoded": 3, <br>
+   <p> "BsmtQualencoded": 2, <br>
+   <p> "KitchenQualencoded": 3 <br>
+} <br>
 Example Response
 {
-    "predicted_price": 250000.5
-}
+    <p> "predicted_price": 250000.5 <br>
+} <br>
 
 ## Testing the API using Postman
 The API can be tested using Postman
