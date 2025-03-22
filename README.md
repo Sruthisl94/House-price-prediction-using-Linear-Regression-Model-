@@ -22,8 +22,8 @@ Run the FastAPI application using Uvicorn.
    Open http://127.0.0.1:8000/docs in the web browser
    Here you can test the /predict endpoint
 ## API Usage
-POST/predict
-This endpoint takes house features in JSON format and returns the predicted price.
+**POST/predict**,<br>
+This endpoint takes house features in JSON format and returns the predicted price.<br>
 Example request:
  <p>{<br>
     <p>"OverallQual": 6.0, <br>
