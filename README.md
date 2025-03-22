@@ -61,7 +61,32 @@ The API can be tested using Postman
       * Build Command: pip install -r requirements.txt
       * Start Command: uvicorn app:app --host 0.0.0.0 --port 8000
    * Click Deploy Service and wait for the API to be hosted.
-4. Get the Live API URL
+4. Get the Live API URL <br>
+ https://house-price-api-sjhx.onrender.com
+5. Visit  https://house-price-api-sjhx.onrender.com/docs to test the API online.
+6. API Usage
+POST/predict
+   This endpoint takes house features in JSON format and returns the predicted price.
+   Example request:
+ <p>{<br>
+    <p>"OverallQual": 7, <br>
+   <p> "YearBuilt": 2005, <br>
+    <p>"YearRemodAdd": 2010, <br>
+    <p>"TotalBsmtSF": 1200.5, <br>
+   <p> "FstFlrSF": 1500, <br>
+   <p> "GrLivArea": 2500, <br>
+   <p> "FullBath": 2, <br>
+    <p>"GarageCars": 2, <br>
+   <p> "GarageArea": 500, <br>
+   <p> "ExterQualencoded": 3, <br>
+   <p> "BsmtQualencoded": 2, <br>
+   <p> "KitchenQualencoded": 3 <br>
+  <p>} <br>
+Example Response<br>
+ <p>{<br>
+    <p> "predicted_price": 250000.5 <br>
+} <br>
+   
    
      
    
