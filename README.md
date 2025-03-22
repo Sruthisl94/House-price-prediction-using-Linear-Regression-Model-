@@ -93,7 +93,7 @@ POST/predict
     "KitchenQualencoded": 3 <br>
 <p></p>Example Response<br>
  <p>{<br>
-    <p> "predicted_price": 250000.5 <br>
+    <p> "predicted_price": 145526.5 <br>
 } <br>
 
 ## Author
