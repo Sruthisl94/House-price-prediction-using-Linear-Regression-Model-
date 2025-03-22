@@ -16,9 +16,9 @@ Root (/) endpoint: Confirms the API is running.<br>
 Run the FastAPI application using Uvicorn.
 
 ## Running FastAPI API locally
-1. Start the API Server
+1. Start the API Server<br>
    python -m uvicorn app:app --reload
-2. Open API Documentation (Swagger UI)
+2. Open API Documentation (Swagger UI)<br>
    Open http://127.0.0.1:8000/docs in the web browser
    Here you can test the /predict endpoint
 ## API Usage
@@ -97,7 +97,7 @@ Example Response<br>
 } <br>
 
 ## Author
-Sruthi S L
+Sruthi S L<br>
 Email: sruthisl2012@gmail.com
    
    
