@@ -53,7 +53,7 @@ The API can be tested using Postman
 5. Click Send and check the response
 
 ## Deploying API using Render
-1. Create a repository on Github initially inchecking the readme file. 
+1. Create a repository on Github initially unchecking the readme file. 
    eg: House_Price_Prediction.git
 2. Push the required files to Github
    Since only three files are required for deployment, push only app.py, House_Price_prediction.joblib, requiremnts.txt
@@ -72,8 +72,8 @@ The API can be tested using Postman
       * Start Command: uvicorn app:app --host 0.0.0.0 --port 8000
    * Click Deploy Service and wait for the API to be hosted.
 4. Get the Live API URL <br>
- https://house-price-api-sjhx.onrender.com
-5. Visit  https://house-price-api-sjhx.onrender.com/docs to test the API online.
+** https://house-price-api-sjhx.onrender.com **
+5. Visit  ** https://house-price-api-sjhx.onrender.com/docs ** to test the API online.
 6. API Usage
 POST/predict
    This endpoint takes house features in JSON format and returns the predicted price.
