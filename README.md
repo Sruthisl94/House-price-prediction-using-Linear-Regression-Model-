@@ -76,8 +76,8 @@ The API can be tested using Postman
 5. Visit  **https://house-price-api-sjhx.onrender.com/docs** to test the API online.
 6. API Usage
 POST/predict
-   This endpoint takes house features in JSON format and returns the predicted price.
-   Example request:
+   This endpoint takes house features in JSON format and returns the predicted price.<br>
+   Example request:<br>
  <p>{<br>
  <p>"OverallQual": 6.0, <br>
    <p> "YearBuilt": 1963.0, <br>
