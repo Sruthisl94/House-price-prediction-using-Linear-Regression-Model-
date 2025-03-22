@@ -27,9 +27,9 @@ This endpoint takes house features in JSON format and returns the predicted pric
 Example request:
  <p>{<br>
     <p>"OverallQual": 6.0, <br>
-   <p> "YearBuilt": 1963.0, <br>
-    <p>"YearRemodAdd": 2003, <br>
-    <p>"TotalBsmtSF": 1059.0, <br>
+   "YearBuilt": 1963.0, <br>
+    "YearRemodAdd": 2003, <br>
+    "TotalBsmtSF": 1059.0, <br>
    <p> "FstFlrSF": 1068.0, <br>
    <p> "GrLivArea": 1068.0, <br>
    <p> "FullBath": 1, <br>
