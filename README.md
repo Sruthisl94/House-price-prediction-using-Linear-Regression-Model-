@@ -30,14 +30,14 @@ Example request:
    "YearBuilt": 1963.0, <br>
     "YearRemodAdd": 2003, <br>
     "TotalBsmtSF": 1059.0, <br>
-   <p> "FstFlrSF": 1068.0, <br>
-   <p> "GrLivArea": 1068.0, <br>
-   <p> "FullBath": 1, <br>
-    <p>"GarageCars": 1.0, <br>
-   <p> "GarageArea": 264.0, <br>
-   <p> "ExterQualencoded": 3, <br>
-   <p> "BsmtQualencoded": 4, <br>
-   <p> "KitchenQualencoded": 3 <br>
+  "FstFlrSF": 1068.0, <br>
+   "GrLivArea": 1068.0, <br>
+   "FullBath": 1, <br>
+    "GarageCars": 1.0, <br>
+   "GarageArea": 264.0, <br>
+   "ExterQualencoded": 3, <br>
+   "BsmtQualencoded": 4, <br>
+    "KitchenQualencoded": 3 <br>
   <p>} <br>
 Example Response<br>
  <p>{<br>
@@ -79,19 +79,19 @@ POST/predict
    This endpoint takes house features in JSON format and returns the predicted price.<br>
    Example request:<br>
  <p>{<br>
- <p>"OverallQual": 6.0, <br>
-   <p> "YearBuilt": 1963.0, <br>
-    <p>"YearRemodAdd": 2003, <br>
-    <p>"TotalBsmtSF": 1059.0, <br>
-   <p> "FstFlrSF": 1068.0, <br>
-   <p> "GrLivArea": 1068.0, <br>
-   <p> "FullBath": 1, <br>
-    <p>"GarageCars": 1.0, <br>
-   <p> "GarageArea": 264.0, <br>
-   <p> "ExterQualencoded": 3, <br>
-   <p> "BsmtQualencoded": 4, <br>
-   <p> "KitchenQualencoded": 3 <br>
-Example Response<br>
+ "OverallQual": 6.0, <br>
+   "YearBuilt": 1963.0, <br>
+   "YearRemodAdd": 2003, <br>
+    "TotalBsmtSF": 1059.0, <br>
+   "FstFlrSF": 1068.0, <br>
+   "GrLivArea": 1068.0, <br>
+   "FullBath": 1, <br>
+    "GarageCars": 1.0, <br>
+    "GarageArea": 264.0, <br>
+    "ExterQualencoded": 3, <br>
+    "BsmtQualencoded": 4, <br>
+    "KitchenQualencoded": 3 <br>
+<p></p>Example Response<br>
  <p>{<br>
     <p> "predicted_price": 250000.5 <br>
 } <br>
