@@ -62,7 +62,7 @@ The API can be tested using Postman
    <p> git add app.py House_Price_prediction.joblib requirements.txt <br>
    <p>git commit -m "Added API and model for deployment"  <br>
    <p> git branch -M main  <br>
-   <p> git remote add origin https://github.com/yourusername/House_Price_Prediction.git  <br>
+   <p> git remote add origin [https://github.com/yourusername/House_Price_Prediction.git](https://github.com/Sruthisl94/House_price_api)  <br>
    <p> git push -u origin main  <br>
 
 3. Deploy on Render
