@@ -91,7 +91,8 @@ POST/predict
     "ExterQualencoded": 3, <br>
     "BsmtQualencoded": 4, <br>
     "KitchenQualencoded": 3 <br>
-<p></p>Example Response<br>
+<p>}<br>
+</p>Example Response<br>
  <p>{<br>
     <p> "predicted_price": 145526.5 <br>
 } <br>
