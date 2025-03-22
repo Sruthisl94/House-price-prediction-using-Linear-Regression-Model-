@@ -48,8 +48,8 @@ The API can be tested using Postman
 2. Push the required files to Github
    Since only three files are required for deployment, push only app.py, House_Price_prediction.joblib, requiremnts.txt
    The requiremnts.txt file is created manually which contain the intalling dependencies.
-   
-git init  git add app.py House_Price_prediction.joblib requirements.txt  git commit -m "Added API and model for deployment"  git branch -M main  git remote add origin https://github.com/yourusername/House_Price_Prediction.git  git push -u origin main
+   <p>git init<br>  
+      git add app.py House_Price_prediction.joblib requirements.txt  git commit -m "Added API and model for deployment"  git branch -M main  git remote add origin https://github.com/yourusername/House_Price_Prediction.git  git push -u origin main
 
 3. Deploy on Render
    * Go to Render and create a new Web Service
