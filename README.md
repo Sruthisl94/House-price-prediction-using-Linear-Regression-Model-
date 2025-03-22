@@ -15,7 +15,7 @@ This project predicted House price using a Linear Regression model. The trained 
 POST/predict
 This endpoint takes house features in JSON format and returns the predicted price.
 Example request:
-{
+ <p>{<br>
     <p>"OverallQual": 7, <br>
    <p> "YearBuilt": 2005, <br>
     <p>"YearRemodAdd": 2010, <br>
@@ -28,9 +28,9 @@ Example request:
    <p> "ExterQualencoded": 3, <br>
    <p> "BsmtQualencoded": 2, <br>
    <p> "KitchenQualencoded": 3 <br>
-} <br>
-Example Response
-{
+  <p>} <br>
+Example Response<br>
+ <p>{<br>
     <p> "predicted_price": 250000.5 <br>
 } <br>
 
