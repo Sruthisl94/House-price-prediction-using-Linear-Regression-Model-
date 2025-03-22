@@ -55,9 +55,9 @@ The API can be tested using Postman
 ## Deploying API using Render
 1. Create a repository on Github initially unchecking the readme file. 
    eg: House_Price_Prediction.git
-2. Push the required files to Github
-   Since only three files are required for deployment, push only app.py, House_Price_prediction.joblib, requiremnts.txt
-   The requiremnts.txt file is created manually which contain the intalling dependencies.
+2. Push the required files to Github<br>
+   Since only three files are required for deployment, push only app.py, House_Price_prediction.joblib, requiremnts.txt<br>
+   The requiremnts.txt file is created manually which contain the installing dependencies.
    <p>git init<br>  
    <p> git add app.py House_Price_prediction.joblib requirements.txt <br>
    <p>git commit -m "Added API and model for deployment"  <br>
