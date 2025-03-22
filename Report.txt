@@ -1,0 +1,100 @@
+House Price Prediction: Report & Documentation
+
+Project Overview:
+This project aims to predict house prices using a Linear Regression Model trained on Kaggle's House Price Prediction dataset. The workflow includes data preprocessing, model training, hyperparameter tuning, and deployment as a FastAPI service on Render.
+
+Data Preprocessing & Feature Engineering:
+
+Handling Missing Values:
+
+Identified missing values using isnull().sum().
+
+Categorical missing values were replaced with "Nil"  (e.g., Alley, Basement columns).
+
+Numerical missing values were imputed using the median.
+
+Handling Outliers:
+
+Outliers were detected using box plots.
+
+Features highly correlated with sale price (OverallQual, TotalBsmtSF, GrLivArea, etc.) were examined.
+
+Extreme outliers were replaced with median value.
+
+Exploratory Data Analysis (EDA):
+
+Visualized distributions using histograms & scatter plots.
+
+Examined correlations with heatmaps to identify important predictors.
+
+Feature Selection & Scaling:
+
+Used SelectKBest to select top features based on relevance to sale price.
+
+Applied StandardScaler to normalize numerical features for better model performance.
+
+Model Training & Hyperparameter Tuning:
+
+Initial Model - Linear Regression:
+
+Built a baseline Linear Regression model using selected features.
+
+Evaluated using R² score, Mean Squared Error (MSE), and Mean Absolute Error (MAE).
+
+Model Improvement - Lasso Regularization & Hyperparameter Tuning:
+
+Used GridSearchCV with Lasso (L1 Regularization) to optimize hyperparameters.
+
+Tuned the alpha parameter to prevent overfitting and improve generalization.
+
+Saving the Model:
+
+Trained model saved as House_Price_prediction.joblib.
+
+Deployment Strategy:
+
+FastAPI Implementation (app.py):
+
+Created an API using FastAPI to serve predictions.
+Included input validation using Pydantic.
+
+Defined an endpoint /predict to accept JSON input and return the predicted price.
+
+Testing the API:
+Using Postman:
+
+Open Postman and create a new POST request.
+
+GitHub & Render Deployment:
+
+Uploaded app.py, House_Price_prediction.joblib, and requirements.txt to GitHub.
+
+Deployed using Render, with the following 
+Start Command:
+uvicorn app:app --host 0.0.0.0 --port 8000
+
+API accessible at: https://house-price-api-sjhx.onrender.com
+
+API Usage Guide:
+Endpoint: POST /predict
+Request Format (JSON):
+{
+"OverallQual": 6.0,
+"YearBuilt": 1963.0,
+"YearRemodAdd": 2003,
+"TotalBsmtSF": 1059.0,
+"FstFlrSF": 1068.0,
+"GrLivArea": 1068.0,
+"FullBath": 1,
+"GarageCars": 1.0,
+"GarageArea": 264.0,
+"ExterQualencoded": 3,
+"BsmtQualencoded": 4,
+"KitchenQualencoded": 3
+}
+
+Response Format (JSON):
+{
+"predicted_price": 144586.5
+}
+
