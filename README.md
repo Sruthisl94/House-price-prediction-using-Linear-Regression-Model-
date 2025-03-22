@@ -53,25 +53,25 @@ The API can be tested using Postman
 5. Click Send and check the response
 
 ## Deploying API using Render
-1. Create a repository on Github initially unchecking the readme file. 
+1. **Create a repository on Github initially unchecking the readme file.**<br>
    eg: House_Price_Prediction.git
-2. Push the required files to Github<br>
+2. **Push the required files to Github**<br>
    Since only three files are required for deployment, push only app.py, House_Price_prediction.joblib, requiremnts.txt<br>
    The requiremnts.txt file is created manually which contain the installing dependencies.
    <p>git init<br>  
    <p> git add app.py House_Price_prediction.joblib requirements.txt <br>
    <p>git commit -m "Added API and model for deployment"  <br>
    <p> git branch -M main  <br>
-   <p> git remote add origin [https://github.com/yourusername/House_Price_Prediction.git](https://github.com/Sruthisl94/House_price_api)  <br>
+   <p> git remote add origin **https://github.com/Sruthisl94/House_price_api.git**  <br>
    <p> git push -u origin main  <br>
 
-3. Deploy on Render
+3. **Deploy on Render**
    * Go to Render and create a new Web Service
    * Connect your GitHub repository.
       * Build Command: pip install -r requirements.txt
       * Start Command: uvicorn app:app --host 0.0.0.0 --port 8000
    * Click Deploy Service and wait for the API to be hosted.
-4. Get the Live API URL <br>
+4. **Get the Live API URL** <br>
    **https://house-price-api-sjhx.onrender.com**
 5. Visit  **https://house-price-api-sjhx.onrender.com/docs** to test the API online.
 6. API Usage
